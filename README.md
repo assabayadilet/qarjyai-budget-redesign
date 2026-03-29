@@ -1,38 +1,37 @@
-# QarjyAI Budget Tracker Redesign
+# QarjyAI Budget Tracker — UI Redesign
 
-Standalone Vite + React design prototype for a mobile budget tracker with a liquid glass UI direction.
+A mobile budget tracker design prototype with a **liquid glass UI** aesthetic, built with React 19 + TypeScript.
 
-## Included screens
+## Screens
 
-- Home
-- Budget
-- Insights
-- Goals
-- Profile
-- Add transaction sheet
-- Goal creation sheet
-- Goal details sheet
+The prototype includes 8 screens across 5 main tabs and 3 modal sheets:
 
-## Stack
+- **Home** — Overview with balance and recent transactions
+- **Budget** — Category-based spending limits
+- **Insights** — Analytics and spending patterns
+- **Goals** — Savings goals tracker
+- **Profile** — User settings
+- **Add Transaction** — Quick entry sheet
+- **Goal Creation** — New goal setup
+- **Goal Details** — Progress and history
 
-- React 19
-- TypeScript
-- Vite
-- Motion
+## Tech Stack
 
-## Local development
+| Technology | Purpose |
+|-----------|---------|
+| React 19 | UI framework |
+| TypeScript | Type safety |
+| Vite | Build tool |
+| Motion | Animations |
+
+## Quick Start
 
 ```bash
-cd "/Users/adiletassabay/Downloads/qarjy ai design"
 npm install
 npm run dev
 ```
 
-Default local URL:
-
-```text
-http://127.0.0.1:5175/
-```
+Local URL: http://127.0.0.1:5175/
 
 ## Build
 
@@ -40,15 +39,22 @@ http://127.0.0.1:5175/
 npm run build
 ```
 
-## Main files
+## Project Structure
 
-- `src/App.tsx`
-- `src/index.css`
-- `index.html`
-- `ICON_SOURCES.md`
+```
+├── src/
+│   ├── App.tsx          # Main app shell with tab navigation
+│   └── index.css        # Global styles + liquid glass effects
+├── public/              # Static assets
+├── index.html           # Entry point
+├── ICON_SOURCES.md      # Icon attribution
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+```
 
-## Notes
+## Design
 
-- The project is structured as a single-screen app shell with internal tab state.
-- For design capture workflows, the screens can also be opened directly with `?tab=home`, `?tab=budget`, `?tab=insights`, `?tab=goals`, and `?tab=profile`.
-- The latest captured Figma file is: `https://www.figma.com/design/5r6V2HN309pxUijNvq4gJy`
+- Single-screen app shell with internal tab state
+- Individual screens accessible via URL params: `?tab=home`, `?tab=budget`, etc.
+- [Figma design file](https://www.figma.com/design/5r6V2HN309pxUijNvq4gJy)

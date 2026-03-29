@@ -63,6 +63,261 @@ function IcMoney({ size = 14, className }: IconProps) {
 function IcKeyboard({ size = 16, className }: IconProps) {
   return <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none"><rect x="3" y="6.5" width="18" height="11" rx="3" stroke="currentColor" strokeWidth="1.7"/><path d="M7 11h.01M10 11h.01M13 11h.01M16 11h.01M8 14h8" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round"/></svg>;
 }
+function IcBell({ size = 16, className }: IconProps) {
+  return <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none"><path d="M6 17h12l-1.4-1.8a4 4 0 0 1-.8-2.4V10a3.8 3.8 0 1 0-7.6 0v2.8c0 .9-.3 1.7-.8 2.4z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round"/><path d="M10 18.5a2 2 0 0 0 4 0" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round"/></svg>;
+}
+function IcShield({ size = 16, className }: IconProps) {
+  return <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none"><path d="M12 3 5.5 5.7v5.6c0 4.3 2.6 7.7 6.5 9.7 3.9-2 6.5-5.4 6.5-9.7V5.7z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round"/><path d="m9.5 11.8 1.8 1.8 3.2-3.2" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg>;
+}
+function IcCard({ size = 16, className }: IconProps) {
+  return <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="3" stroke="currentColor" strokeWidth="1.7"/><path d="M3 10h18" stroke="currentColor" strokeWidth="1.7"/></svg>;
+}
+function IcMoon({ size = 16, className }: IconProps) {
+  return <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none"><path d="M14.8 4.8a7.5 7.5 0 1 0 4.4 13.6 8 8 0 1 1-4.4-13.6Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round"/></svg>;
+}
+function IcGlobe({ size = 16, className }: IconProps) {
+  return <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="1.7"/><path d="M4 12h16M12 4a12 12 0 0 1 0 16M12 4a12 12 0 0 0 0 16" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round"/></svg>;
+}
+function IcFolder({ size = 16, className }: IconProps) {
+  return <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none"><path d="M3.5 8a2 2 0 0 1 2-2h4l1.5 2h7.5a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round"/></svg>;
+}
+function IcDoc({ size = 16, className }: IconProps) {
+  return <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none"><path d="M7 4.5h7l4 4V18a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round"/><path d="M14 4.5V9h4M9 12h6M9 15h6" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round"/></svg>;
+}
+function IcCog({ size = 16, className }: IconProps) {
+  return <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none"><path d="m12 8.5.9-1.8 2 .4.7 1.9 1.8.9 1.4-1.4 1.5 1.5-1.4 1.4.9 1.8 1.9.7-.4 2-1.8.9-.9 1.8 1.4 1.4-1.5 1.5-1.4-1.4-1.8.9-.7 1.9-2-.4-.9-1.8-1.8-.9-1.4 1.4-1.5-1.5 1.4-1.4-.9-1.8-1.9-.7.4-2 1.8-.9.9-1.8-1.4-1.4 1.5-1.5 1.4 1.4 1.8-.9.7-1.9 2 .4z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round"/><circle cx="12" cy="12" r="2.5" stroke="currentColor" strokeWidth="1.7"/></svg>;
+}
+function IcHelp({ size = 16, className }: IconProps) {
+  return <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="1.7"/><path d="M9.5 9.4a2.5 2.5 0 1 1 3.7 2.2c-.8.4-1.2.9-1.2 1.9M12 16h.01" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round"/></svg>;
+}
+function IcLogout({ size = 16, className }: IconProps) {
+  return <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none"><path d="M10 6H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4M14 8l4 4-4 4M18 12H9" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg>;
+}
+
+// ── i18n ──────────────────────────────────────────────────────────────────────
+type Lang = 'en' | 'ru' | 'kk';
+type Currency = 'KZT' | 'USD' | 'RUB';
+
+const translations = {
+  en: {
+    nav_home: 'Home', nav_budget: 'Budget', nav_insights: 'Insights',
+    nav_goals: 'Goals', nav_profile: 'Profile',
+    total_balance: 'Total Balance', income: 'Income', expenses: 'Expenses',
+    budget_overview: 'Budget Overview', recent_activity: 'Recent Transactions',
+    view_all: 'View all', smart_rec: 'Smart Recommendation', greeting: 'Hello',
+    transactions: 'Transactions', today: 'Today', yesterday: 'Yesterday',
+    all: 'All', spent: 'Spent', monthly_summary: 'Monthly Summary',
+    no_transactions: 'No transactions',
+    cat_food: 'Food', cat_transport: 'Transport', cat_shopping: 'Shopping',
+    cat_bills: 'Bills', cat_income: 'Income',
+    goals: 'Goals', my_pockets: 'My Pockets', create_pocket: 'Create pocket',
+    new_goal: 'New Goal', primary_label: 'Primary', saved: 'Saved',
+    target: 'Target', remaining: 'Remaining', projected_finish: 'Projected finish',
+    add_funds_btn: 'Add funds', details: 'Details', active_pockets: 'active pockets',
+    monthly_savings: 'Monthly Savings', this_month: 'This month',
+    funded: '% funded', completed: 'Completed', closing_in: 'Closing in',
+    in_motion: 'In motion', getting_started: 'Getting started',
+    tap_pocket: 'Tap a pocket to see details', total_label: 'total',
+    priority_high: 'High', priority_medium: 'Medium', priority_low: 'Low',
+    goal_cat_home: 'Home', goal_cat_car: 'Car', goal_cat_travel: 'Travel',
+    goal_cat_debt: 'Debt', goal_cat_emergency: 'Emergency', goal_cat_other: 'Other',
+    goal_name: 'Goal name', goal_target: 'Target amount',
+    goal_already_saved: 'Already saved', goal_monthly: 'Monthly contribution (optional)',
+    goal_deadline: 'Deadline', goal_priority: 'Priority', goal_category: 'Category',
+    goal_note: 'Note', save_goal: 'Save Goal', create_goal: 'Create Goal',
+    make_primary: 'Make primary', add_money: 'Add money',
+    monthly_transfer: 'Monthly transfer', added_this_month: 'Added this month',
+    next_milestone: 'Next milestone', at_current_pace: 'At current pace',
+    financial_health: 'Financial Health Score', spending_habits: 'Spending habits',
+    savings_rate: 'Savings rate', budget_adherence: 'Budget adherence',
+    key_insights: 'Key insights', your_achievements: 'Your achievements',
+    insight_spent_less_food_week: "You've spent {percent}% less on {category} this week. Great job!",
+    profile: 'Profile', account: 'Account', preferences: 'Preferences',
+    data_section: 'Data', support: 'Support',
+    edit_profile: 'Edit Profile', payment_methods: 'Payment Methods',
+    privacy_security: 'Privacy & Security', notifications: 'Notifications',
+    dark_mode: 'Dark Mode', language: 'Language', currency: 'Currency',
+    manage_categories: 'Manage Categories',
+    export_data: 'Export Data', generate_report: 'Generate Report',
+    backup_restore: 'Backup & Restore', help_center: 'Help Center',
+    app_settings: 'App Settings', logout: 'Log Out', goal_progress: 'Goal Progress',
+    face_id_on: 'Face ID enabled', face_id_off: 'Face ID disabled',
+    digest_on: 'Weekly digest active', digest_off: 'Weekly digest off',
+    add_expense: 'Add Expense', add_income: 'Add Income',
+    expense: 'Expense', amount: 'Amount', category: 'Category',
+    description: 'Description', date: 'Date',
+    scan_qr: 'Scan QR / Check', upload_screenshot: 'Upload screenshot',
+    voice_input: 'Voice input', enter_manually: 'Enter manually',
+    instant: 'Instant', photo: 'Photo', speak: 'Speak', manual: 'Manual',
+    back_to_ai: 'Back to AI options', save_btn: 'Save',
+    top_up: 'Top Up', top_up_subtitle: 'Add funds to your balance or goal',
+    quick_amounts: 'Quick amounts', select_goal: 'Select goal (optional)',
+    confirm_top_up: 'Confirm Top Up',
+    select_language: 'Select Language', select_currency: 'Select Currency',
+    cancel: 'Cancel', no_goal: 'No goal',
+    pocket_details: 'Pocket Details', progress: 'Progress',
+    header_home: 'Budget Tracker', header_home_sub: 'Your financial overview',
+    header_budget: 'Budget', header_budget_sub: 'Track and review monthly spending',
+    header_insights: 'Insights', header_insights_sub: 'Signals and financial nudges',
+    header_goals: 'Goals', header_goals_sub: 'Plan, prioritize, and fund your next milestones',
+    header_profile: 'Profile', header_profile_sub: 'Manage your account and settings',
+    add_transaction: 'Add Transaction', use_ai_or_fill: 'Use AI or fill manually',
+    auto_detect: 'Auto detect amount and category',
+    extract_from_image: 'Extract expense from image',
+    convert_speech: 'Convert speech to transaction',
+    type_manually: 'Type amount and category yourself',
+    wallet: 'Wallet',
+  },
+  ru: {
+    nav_home: 'Главная', nav_budget: 'Бюджет', nav_insights: 'Аналитика',
+    nav_goals: 'Цели', nav_profile: 'Профиль',
+    total_balance: 'Общий баланс', income: 'Доходы', expenses: 'Расходы',
+    budget_overview: 'Бюджет', recent_activity: 'Последние операции',
+    view_all: 'Все', smart_rec: 'Умная рекомендация', greeting: 'Привет',
+    transactions: 'Транзакции', today: 'Сегодня', yesterday: 'Вчера',
+    all: 'Все', spent: 'Потрачено', monthly_summary: 'Итоги месяца',
+    no_transactions: 'Нет транзакций',
+    cat_food: 'Еда', cat_transport: 'Транспорт', cat_shopping: 'Покупки',
+    cat_bills: 'Счета', cat_income: 'Доход',
+    goals: 'Цели', my_pockets: 'Мои копилки', create_pocket: 'Создать копилку',
+    new_goal: 'Новая цель', primary_label: 'Главная', saved: 'Накоплено',
+    target: 'Цель', remaining: 'Осталось', projected_finish: 'Прогноз',
+    add_funds_btn: 'Пополнить', details: 'Детали', active_pockets: 'активных копилок',
+    monthly_savings: 'Ежемесячные сбережения', this_month: 'В этом месяце',
+    funded: '% накоплено', completed: 'Выполнено', closing_in: 'Почти готово',
+    in_motion: 'В процессе', getting_started: 'Начинаем',
+    tap_pocket: 'Нажмите на копилку', total_label: 'всего',
+    priority_high: 'Высокий', priority_medium: 'Средний', priority_low: 'Низкий',
+    goal_cat_home: 'Жильё', goal_cat_car: 'Авто', goal_cat_travel: 'Путешествие',
+    goal_cat_debt: 'Долг', goal_cat_emergency: 'Резерв', goal_cat_other: 'Другое',
+    goal_name: 'Название цели', goal_target: 'Целевая сумма',
+    goal_already_saved: 'Уже накоплено', goal_monthly: 'Ежемесячный взнос (необязательно)',
+    goal_deadline: 'Срок', goal_priority: 'Приоритет', goal_category: 'Категория',
+    goal_note: 'Заметка', save_goal: 'Сохранить цель', create_goal: 'Создать цель',
+    make_primary: 'Сделать главной', add_money: 'Пополнить',
+    monthly_transfer: 'Ежемесячный взнос', added_this_month: 'Добавлено в этом месяце',
+    next_milestone: 'Следующий рубеж', at_current_pace: 'При текущем темпе',
+    financial_health: 'Финансовое здоровье', spending_habits: 'Расходные привычки',
+    savings_rate: 'Норма сбережений', budget_adherence: 'Соблюдение бюджета',
+    key_insights: 'Ключевые выводы', your_achievements: 'Ваши достижения',
+    insight_spent_less_food_week: 'На этой неделе вы потратили на {percent}% меньше на категорию «{category}». Отличная работа!',
+    profile: 'Профиль', account: 'Аккаунт', preferences: 'Настройки',
+    data_section: 'Данные', support: 'Поддержка',
+    edit_profile: 'Редактировать профиль', payment_methods: 'Способы оплаты',
+    privacy_security: 'Конфиденциальность', notifications: 'Уведомления',
+    dark_mode: 'Тёмный режим', language: 'Язык', currency: 'Валюта',
+    manage_categories: 'Управление категориями',
+    export_data: 'Экспорт данных', generate_report: 'Создать отчёт',
+    backup_restore: 'Резервная копия', help_center: 'Справка',
+    app_settings: 'Настройки', logout: 'Выйти', goal_progress: 'Прогресс целей',
+    face_id_on: 'Face ID включён', face_id_off: 'Face ID выключен',
+    digest_on: 'Еженедельный отчёт активен', digest_off: 'Отчёт отключён',
+    add_expense: 'Добавить расход', add_income: 'Добавить доход',
+    expense: 'Расход', amount: 'Сумма', category: 'Категория',
+    description: 'Описание', date: 'Дата',
+    scan_qr: 'Сканировать QR / Чек', upload_screenshot: 'Загрузить скриншот',
+    voice_input: 'Голосовой ввод', enter_manually: 'Ввести вручную',
+    instant: 'Быстро', photo: 'Фото', speak: 'Голос', manual: 'Вручную',
+    back_to_ai: 'Назад к ИИ', save_btn: 'Сохранить',
+    top_up: 'Пополнение', top_up_subtitle: 'Пополнить баланс или копилку',
+    quick_amounts: 'Быстрые суммы', select_goal: 'Выберите копилку (необязательно)',
+    confirm_top_up: 'Подтвердить пополнение',
+    select_language: 'Выберите язык', select_currency: 'Выберите валюту',
+    cancel: 'Отмена', no_goal: 'Без цели',
+    pocket_details: 'Детали копилки', progress: 'Прогресс',
+    header_home: 'Финансы', header_home_sub: 'Ваш финансовый обзор',
+    header_budget: 'Бюджет', header_budget_sub: 'Просмотр расходов за месяц',
+    header_insights: 'Аналитика', header_insights_sub: 'Сигналы и финансовые подсказки',
+    header_goals: 'Цели', header_goals_sub: 'Планируйте и финансируйте цели',
+    header_profile: 'Профиль', header_profile_sub: 'Настройки аккаунта',
+    add_transaction: 'Добавить транзакцию', use_ai_or_fill: 'ИИ или вручную',
+    auto_detect: 'Автоопределение суммы и категории',
+    extract_from_image: 'Извлечь расход из изображения',
+    convert_speech: 'Преобразовать речь в транзакцию',
+    type_manually: 'Ввести сумму и категорию вручную',
+    wallet: 'Кошелёк',
+  },
+  kk: {
+    nav_home: 'Басты бет', nav_budget: 'Бюджет', nav_insights: 'Талдау',
+    nav_goals: 'Мақсаттар', nav_profile: 'Профиль',
+    total_balance: 'Жалпы баланс', income: 'Кіріс', expenses: 'Шығыс',
+    budget_overview: 'Бюджет', recent_activity: 'Соңғы операциялар',
+    view_all: 'Барлығы', smart_rec: 'Ақылды кеңес', greeting: 'Сәлем',
+    transactions: 'Транзакциялар', today: 'Бүгін', yesterday: 'Кеше',
+    all: 'Барлығы', spent: 'Жұмсалды', monthly_summary: 'Ай қорытындысы',
+    no_transactions: 'Транзакция жоқ',
+    cat_food: 'Тамақ', cat_transport: 'Көлік', cat_shopping: 'Шоппинг',
+    cat_bills: 'Шоттар', cat_income: 'Табыс',
+    goals: 'Мақсаттар', my_pockets: 'Менің қалталарым', create_pocket: 'Қалта құру',
+    new_goal: 'Жаңа мақсат', primary_label: 'Басты', saved: 'Жиналды',
+    target: 'Мақсат', remaining: 'Қалды', projected_finish: 'Болжам',
+    add_funds_btn: 'Толықтыру', details: 'Толығырақ', active_pockets: 'белсенді қалта',
+    monthly_savings: 'Ай сайынғы жинақ', this_month: 'Осы айда',
+    funded: '% жиналды', completed: 'Аяқталды', closing_in: 'Дерлік дайын',
+    in_motion: 'Жүріп жатыр', getting_started: 'Бастаймыз',
+    tap_pocket: 'Қалтаны басыңыз', total_label: 'барлығы',
+    priority_high: 'Жоғары', priority_medium: 'Орта', priority_low: 'Төмен',
+    goal_cat_home: 'Баспана', goal_cat_car: 'Көлік', goal_cat_travel: 'Саяхат',
+    goal_cat_debt: 'Қарыз', goal_cat_emergency: 'Резерв', goal_cat_other: 'Басқа',
+    goal_name: 'Мақсат атауы', goal_target: 'Мақсат сомасы',
+    goal_already_saved: 'Қазірдің өзінде жиналды', goal_monthly: 'Ай сайынғы жарна (міндетті емес)',
+    goal_deadline: 'Мерзім', goal_priority: 'Басымдық', goal_category: 'Санат',
+    goal_note: 'Ескертпе', save_goal: 'Мақсатты сақтау', create_goal: 'Мақсат құру',
+    make_primary: 'Басты ету', add_money: 'Толықтыру',
+    monthly_transfer: 'Ай сайынғы жарна', added_this_month: 'Осы айда қосылды',
+    next_milestone: 'Келесі белес', at_current_pace: 'Ағымдағы қарқынмен',
+    financial_health: 'Қаржылық денсаулық', spending_habits: 'Шығын әдеттері',
+    savings_rate: 'Жинақ нормасы', budget_adherence: 'Бюджетті сақтау',
+    key_insights: 'Негізгі тұжырымдар', your_achievements: 'Жетістіктеріңіз',
+    insight_spent_less_food_week: 'Осы аптада «{category}» санатына {percent}% аз жұмсадыңыз. Керемет нәтиже!',
+    profile: 'Профиль', account: 'Аккаунт', preferences: 'Баптаулар',
+    data_section: 'Деректер', support: 'Қолдау',
+    edit_profile: 'Профильді өңдеу', payment_methods: 'Төлем әдістері',
+    privacy_security: 'Құпиялылық', notifications: 'Хабарландырулар',
+    dark_mode: 'Қараңғы режим', language: 'Тіл', currency: 'Валюта',
+    manage_categories: 'Санаттарды басқару',
+    export_data: 'Деректерді экспорттау', generate_report: 'Есеп құру',
+    backup_restore: 'Сақтық көшірме', help_center: 'Анықтама',
+    app_settings: 'Баптаулар', logout: 'Шығу', goal_progress: 'Мақсат прогресі',
+    face_id_on: 'Face ID қосылған', face_id_off: 'Face ID өшірілген',
+    digest_on: 'Апталық есеп белсенді', digest_off: 'Есеп өшірілген',
+    add_expense: 'Шығын қосу', add_income: 'Кіріс қосу',
+    expense: 'Шығын', amount: 'Сома', category: 'Санат',
+    description: 'Сипаттама', date: 'Күн',
+    scan_qr: 'QR / Чекті сканерлеу', upload_screenshot: 'Скриншот жүктеу',
+    voice_input: 'Дауыспен енгізу', enter_manually: 'Қолмен енгізу',
+    instant: 'Жылдам', photo: 'Фото', speak: 'Дауыс', manual: 'Қолмен',
+    back_to_ai: 'ЖИ-ға оралу', save_btn: 'Сақтау',
+    top_up: 'Толықтыру', top_up_subtitle: 'Балансты немесе қалтаны толықтыру',
+    quick_amounts: 'Жылдам сомалар', select_goal: 'Қалтаны таңдаңыз (міндетті емес)',
+    confirm_top_up: 'Толықтыруды растау',
+    select_language: 'Тілді таңдаңыз', select_currency: 'Валюта таңдаңыз',
+    cancel: 'Болдырмау', no_goal: 'Мақсатсыз',
+    pocket_details: 'Қалта мәліметтері', progress: 'Прогресс',
+    header_home: 'Қаржы', header_home_sub: 'Қаржылық шолуыңыз',
+    header_budget: 'Бюджет', header_budget_sub: 'Ай шығындарын бақылау',
+    header_insights: 'Талдау', header_insights_sub: 'Сигналдар мен кеңестер',
+    header_goals: 'Мақсаттар', header_goals_sub: 'Мақсаттарды жоспарлаңыз',
+    header_profile: 'Профиль', header_profile_sub: 'Аккаунт баптаулары',
+    add_transaction: 'Транзакция қосу', use_ai_or_fill: 'ЖИ немесе қолмен',
+    auto_detect: 'Санат пен соманы автоанықтау',
+    extract_from_image: 'Суреттен шығынды алу',
+    convert_speech: 'Сөзді транзакцияға айналдыру',
+    type_manually: 'Санат пен соманы қолмен енгізу',
+    wallet: 'Әмиян',
+  },
+} as const;
+
+type TranslationKey = keyof typeof translations.en;
+
+// ── goalMomentumKey (returns TranslationKey for t()) ──────────────────────────
+function goalMomentumKey(goal: Goal): TranslationKey {
+  const progress = goalProgress(goal);
+  if (progress >= 100) return 'completed';
+  if (progress >= 75) return 'closing_in';
+  if (progress >= 40) return 'in_motion';
+  return 'getting_started';
+}
 
 type Tab = 'home' | 'budget' | 'insights' | 'goals' | 'profile';
 type TxCategory = 'Food' | 'Transport' | 'Shopping' | 'Bills' | 'Income';
@@ -152,24 +407,20 @@ const seedGoals: Goal[] = [
   { id: 105, title: 'Emergency Fund', category: 'Emergency', target: 4000, saved: 700, deadline: isoDateWithMonthOffset(18), priority: 'Low', monthlyContribution: 140, thisMonthSaved: 140 },
 ];
 
-function statCurrency(value: number) {
-  return `$${Math.abs(value).toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
-}
-
 function categoryMetaById(id: TxCategory): CategoryItem {
   if (id === 'Income') return incomeCategories[0];
   return expenseCategories.find((c) => c.id === id) ?? expenseCategories[0];
 }
 
-function transactionDayLabel(dateString: string) {
+function transactionDayLabel(dateString: string, lang: Lang) {
   const today = isoDateWithOffset(0);
   const yesterday = isoDateWithOffset(-1);
 
-  if (dateString === today) return 'Today';
-  if (dateString === yesterday) return 'Yesterday';
+  if (dateString === today) return translations[lang].today;
+  if (dateString === yesterday) return translations[lang].yesterday;
 
   const date = new Date(`${dateString}T12:00:00`);
-  return new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric' }).format(date);
+  return new Intl.DateTimeFormat(lang === 'kk' ? 'kk-KZ' : lang === 'ru' ? 'ru-RU' : 'en-US', { month: 'long', day: 'numeric' }).format(date);
 }
 
 function monthsUntil(dateString: string) {
@@ -253,22 +504,14 @@ function goalTheme(goal: Goal) {
   };
 }
 
-function goalMomentumLabel(goal: Goal) {
-  const progress = goalProgress(goal);
-  if (progress >= 100) return 'Completed';
-  if (progress >= 75) return 'Closing in';
-  if (progress >= 40) return 'In motion';
-  return 'Getting started';
-}
-
 function goalProjectedMonths(goal: Goal) {
   return Math.max(1, Math.ceil(goalRemaining(goal) / Math.max(goal.monthlyContribution, 1)));
 }
 
-function goalProjectedDateLabel(goal: Goal) {
+function goalProjectedDateLabel(goal: Goal, lang: Lang) {
   const projected = new Date();
   projected.setMonth(projected.getMonth() + goalProjectedMonths(goal));
-  return new Intl.DateTimeFormat('en-US', { month: 'short', year: 'numeric' }).format(projected);
+  return new Intl.DateTimeFormat(lang === 'kk' ? 'kk-KZ' : lang === 'ru' ? 'ru-RU' : 'en-US', { month: 'short', year: 'numeric' }).format(projected);
 }
 
 function goalNextMilestone(goal: Goal) {
@@ -357,6 +600,46 @@ function LiquidCard({ className = '', style, children }: { className?: string; s
 
 export default function App() {
   const [tab, setTab] = useState<Tab>(() => initialTabFromLocation());
+  const [lang, setLang] = useState<Lang>('en');
+  const [currency, setCurrency] = useState<Currency>('KZT');
+  const [showLangModal, setShowLangModal] = useState(false);
+  const [showCurrencyModal, setShowCurrencyModal] = useState(false);
+  const [showTopUpModal, setShowTopUpModal] = useState(false);
+  const [topUpAmount, setTopUpAmount] = useState('');
+  const [topUpGoalId, setTopUpGoalId] = useState<number | null>(null);
+
+  const t = (key: TranslationKey) => translations[lang][key];
+  const tf = (key: TranslationKey, vars: Record<string, string | number>) => {
+    let template = t(key);
+    for (const [name, value] of Object.entries(vars)) {
+      template = template.replace(`{${name}}`, String(value));
+    }
+    return template;
+  };
+
+  const openTopUpModal = (goalId: number | null = null, presetAmount = '') => {
+    setTopUpGoalId(goalId);
+    setTopUpAmount(presetAmount);
+    setShowTopUpModal(true);
+  };
+
+  const closeTopUpModal = () => {
+    setTopUpAmount('');
+    setTopUpGoalId(null);
+    setShowTopUpModal(false);
+  };
+
+  const formatAmount = (value: number) => {
+    const abs = Math.abs(value);
+    const formatted = abs.toLocaleString(
+      lang === 'kk' ? 'kk-KZ' : lang === 'ru' ? 'ru-RU' : 'en-US',
+      { maximumFractionDigits: 2 }
+    );
+    if (currency === 'KZT') return `${formatted} ₸`;
+    if (currency === 'RUB') return `${formatted} ₽`;
+    return `$${formatted}`;
+  };
+
   const [showAddModal, setShowAddModal] = useState(false);
   const [showGoalModal, setShowGoalModal] = useState(false);
   const [selectedGoalId, setSelectedGoalId] = useState<number | null>(null);
@@ -374,6 +657,10 @@ export default function App() {
   const [goalPriority, setGoalPriority] = useState<GoalPriority>('Medium');
   const [goalCategory, setGoalCategory] = useState<GoalCategory>('Other');
   const [goalMonthly, setGoalMonthly] = useState('');
+  const [notificationsEnabled, setNotificationsEnabled] = useState(true);
+  const [faceIdEnabled] = useState(false);
+  const [weeklyDigestEnabled, setWeeklyDigestEnabled] = useState(true);
+  const [darkModeEnabled, setDarkModeEnabled] = useState(false);
 
   const totalSpent = useMemo(
     () => transactions.filter((t) => t.amount < 0).reduce((s, t) => s + Math.abs(t.amount), 0),
@@ -395,11 +682,11 @@ export default function App() {
     }
 
     for (const [date, items] of seen.entries()) {
-      groups.push({ label: transactionDayLabel(date), items });
+      groups.push({ label: transactionDayLabel(date, lang), items });
     }
 
     return groups;
-  }, [transactions]);
+  }, [transactions, lang]);
   const sortedGoals = useMemo(
     () =>
       [...goals].sort((a, b) => {
@@ -512,6 +799,27 @@ export default function App() {
     setShowGoalModal(false);
   };
 
+  const confirmTopUp = () => {
+    const parsed = Number(topUpAmount.replace(',', '.'));
+    if (Number.isNaN(parsed) || parsed <= 0) return;
+    if (topUpGoalId !== null) {
+      addFundsToGoal(topUpGoalId, parsed);
+    }
+    // Add as income transaction
+    setTransactions((prev) => [
+      {
+        id: Date.now(),
+        name: t('top_up'),
+        category: 'Income',
+        amount: parsed,
+        time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+        date: isoDateWithOffset(0),
+      },
+      ...prev,
+    ]);
+    closeTopUpModal();
+  };
+
   const Screen = () => {
     if (tab === 'home') {
       return (
@@ -519,26 +827,28 @@ export default function App() {
           <LiquidCard className="hero-card">
             <div className="row between">
               <div>
-                <p className="eyebrow">Total Balance</p>
-                <h1>${(totalIncome - totalSpent + 3450).toLocaleString()}</h1>
+                <button className="home-balance-trigger" onClick={() => openTopUpModal()} aria-label={t('top_up')}>
+                  <p className="eyebrow">{t('total_balance')}</p>
+                  <h1>{formatAmount(totalIncome - totalSpent + 3450)}</h1>
+                </button>
               </div>
               <div className="liquid-icon"><IcWallet size={17} /></div>
             </div>
             <div className="grid two mt16">
               <div className="metric-tile">
-                <p className="muted">Income</p>
-                <strong className="ok">+{statCurrency(totalIncome)}</strong>
+                <p className="muted">{t('income')}</p>
+                <strong className="ok">+{formatAmount(totalIncome)}</strong>
               </div>
               <div className="metric-tile">
-                <p className="muted">Expenses</p>
-                <strong className="bad">-{statCurrency(totalSpent)}</strong>
+                <p className="muted">{t('expenses')}</p>
+                <strong className="bad">-{formatAmount(totalSpent)}</strong>
               </div>
             </div>
           </LiquidCard>
 
           <LiquidCard>
             <div className="row between">
-              <h3>Primary Goal</h3>
+              <h3>{t('primary_label')} {t('goals')}</h3>
               <strong>65%</strong>
             </div>
             <p className="muted">Car Purchase</p>
@@ -547,21 +857,21 @@ export default function App() {
 
           <LiquidCard>
             <div className="row between">
-              <h3>Recent Transactions</h3>
-              <button className="ghost" onClick={() => setTab('budget')}>View all</button>
+              <h3>{t('recent_activity')}</h3>
+              <button className="ghost" onClick={() => setTab('budget')}>{t('view_all')}</button>
             </div>
             <div className="stack sm mt12">
-              {transactions.slice(0, 3).map((t) => {
-                const meta = categoryMetaById(t.category);
+              {transactions.slice(0, 3).map((tx) => {
+                const meta = categoryMetaById(tx.category);
                 return (
-                  <div key={t.id} className="tx">
+                  <div key={tx.id} className="tx">
                     <div className="tx-icon" style={{ backgroundColor: meta.bg, color: meta.color }}>{meta.icon}</div>
                     <div className="grow">
-                      <p>{t.name}</p>
-                      <small>{t.category} • {t.time}</small>
+                      <p>{tx.name}</p>
+                      <small>{t(`cat_${tx.category.toLowerCase()}` as any)} • {tx.time}</small>
                     </div>
-                    <strong className={t.amount > 0 ? 'ok' : ''}>
-                      {t.amount > 0 ? '+' : '-'}{statCurrency(t.amount)}
+                    <strong className={tx.amount > 0 ? 'ok' : ''}>
+                      {tx.amount > 0 ? '+' : '-'}{formatAmount(tx.amount)}
                     </strong>
                   </div>
                 );
@@ -578,43 +888,45 @@ export default function App() {
           <LiquidCard className="summary-card">
             <div className="row between">
               <div>
-                <p className="eyebrow summary-eyebrow">Budget Overview</p>
-                <h3>March Summary</h3>
+                <p className="eyebrow summary-eyebrow">{t('budget_overview')}</p>
+                <h3>{t('monthly_summary')}</h3>
               </div>
-              <div className="summary-chip">March 2026</div>
+              <div className="summary-chip">
+                {new Intl.DateTimeFormat(lang === 'kk' ? 'kk-KZ' : lang === 'ru' ? 'ru-RU' : 'en-US', { month: 'long', year: 'numeric' }).format(new Date())}
+              </div>
             </div>
             <div className="grid two mt12">
               <div className="metric-tile light summary-metric summary-metric--primary">
-                <p className="muted">Total Spent</p>
-                <strong className="bad">-{statCurrency(totalSpent)}</strong>
-                <small>Expenses this month</small>
+                <p className="muted">{t('spent')}</p>
+                <strong className="bad">-{formatAmount(totalSpent)}</strong>
+                <small>{t('this_month')}</small>
               </div>
               <div className="metric-tile light summary-metric">
-                <p className="muted">Transactions</p>
+                <p className="muted">{t('transactions')}</p>
                 <strong>{transactions.length}</strong>
-                <small>Entries recorded</small>
+                <small>{t('all')}</small>
               </div>
             </div>
           </LiquidCard>
 
           <LiquidCard>
-            <h3>Transactions</h3>
+            <h3>{t('transactions')}</h3>
             <div className="tx-groups mt12">
               {groupedTransactions.map((group) => (
                 <div key={group.label} className="tx-group">
                   <div className="tx-group__header">{group.label}</div>
                   <div className="stack sm">
-                    {group.items.map((t) => {
-                      const meta = categoryMetaById(t.category);
+                    {group.items.map((tx) => {
+                      const meta = categoryMetaById(tx.category);
                       return (
-                        <div key={t.id} className="tx">
+                        <div key={tx.id} className="tx">
                           <div className="tx-icon" style={{ backgroundColor: meta.bg, color: meta.color }}>{meta.icon}</div>
                           <div className="grow">
-                            <p>{t.name}</p>
-                            <small>{t.time} • {t.category}</small>
+                            <p>{tx.name}</p>
+                            <small>{tx.time} • {t(`cat_${tx.category.toLowerCase()}` as any)}</small>
                           </div>
-                          <strong className={t.amount > 0 ? 'ok' : ''}>
-                            {t.amount > 0 ? '+' : '-'}{statCurrency(t.amount)}
+                          <strong className={tx.amount > 0 ? 'ok' : ''}>
+                            {tx.amount > 0 ? '+' : '-'}{formatAmount(tx.amount)}
                           </strong>
                         </div>
                       );
@@ -634,7 +946,7 @@ export default function App() {
           <LiquidCard className="hero-card">
             <div className="row between">
               <div>
-                <p className="eyebrow">Financial Health Score</p>
+                <p className="eyebrow">{t('financial_health')}</p>
                 <h1>8.4 / 10</h1>
               </div>
               <div className="liquid-icon"><IcGoal size={17} /></div>
@@ -642,23 +954,24 @@ export default function App() {
           </LiquidCard>
 
           {[
-            { title: 'High Food Spending', desc: 'You spent 23% more on food this month.' },
-            { title: 'Savings Goal Reached', desc: 'You saved $500 this month as planned.' },
-            { title: 'Smart Saving Tip', desc: 'Cancel unused subscriptions to save $45/month.' },
-          ].map((i, idx) => (
-            <LiquidCard key={i.title}>
-              <div className="row gap">
-                <div className="tx-icon" style={{ backgroundColor: ['#FFE4E6', '#D1FAE5', '#E0F2FE'][idx], color: ['#BE123C', '#047857', '#075985'][idx] }}>
-                  {idx === 0 ? <IcBudget size={13} /> : idx === 1 ? <IcGoal size={13} /> : <IcSpark size={13} />}
-                </div>
-                <div className="grow">
-                  <p>{i.title}</p>
-                  <small>{i.desc}</small>
-                </div>
-                <IcArrow size={15} />
+            { label: t('spending_habits'), value: '86%', status: 'good' },
+            { label: t('savings_rate'), value: '24%', status: 'warn' },
+            { label: t('budget_adherence'), value: '92%', status: 'good' },
+          ].map((insight) => (
+            <LiquidCard key={insight.label}>
+              <div className="row between">
+                <p className="muted">{insight.label}</p>
+                <span className={`status-chip status-chip--${insight.status}`}>{insight.value}</span>
               </div>
             </LiquidCard>
           ))}
+
+          <LiquidCard>
+            <h3>{t('key_insights')}</h3>
+            <p className="muted mt8">
+              {tf('insight_spent_less_food_week', { percent: 12, category: t('cat_food') })}
+            </p>
+          </LiquidCard>
         </div>
       );
     }
@@ -669,22 +982,22 @@ export default function App() {
           <LiquidCard className="goals-pocket-hero">
             <div className="row between">
               <div>
-                <p className="eyebrow goals-pocket-eyebrow">Monthly Savings</p>
-                <h3>{primaryGoal?.title ?? 'Goals'}</h3>
-                <small>{activeGoalsCount} active pockets</small>
+                <p className="eyebrow goals-pocket-eyebrow">{t('monthly_savings')}</p>
+                <h3>{primaryGoal?.title ?? t('goals')}</h3>
+                <small>{activeGoalsCount} {t('active_pockets')}</small>
               </div>
-              <button className="summary-chip goals-pocket-chip" onClick={() => setShowGoalModal(true)}>New Goal</button>
+              <button className="summary-chip goals-pocket-chip" onClick={() => setShowGoalModal(true)}>{t('new_goal')}</button>
             </div>
-            <div className="goals-pocket-balance">{statCurrency(totalGoalSaved)}</div>
+            <div className="goals-pocket-balance">{formatAmount(totalGoalSaved)}</div>
             <div className="goals-pocket-progress">
               <div className="row between">
-                <small>This month +{statCurrency(thisMonthGoalsAdded)}</small>
+                <small>{t('this_month')} +{formatAmount(thisMonthGoalsAdded)}</small>
                 <small>{totalGoalProgress}%</small>
               </div>
               <div className="bar goal-pocket-bar mt8"><span style={{ width: `${totalGoalProgress}%` }} /></div>
               <div className="row between mt8">
-                <small>Saved {statCurrency(totalGoalSaved)}</small>
-                <small>Goals {statCurrency(totalGoalTarget)}</small>
+                <small>{t('saved')} {formatAmount(totalGoalSaved)}</small>
+                <small>{t('goals')} {formatAmount(totalGoalTarget)}</small>
               </div>
             </div>
           </LiquidCard>
@@ -710,40 +1023,40 @@ export default function App() {
                   <div>
                     <h3>{primaryGoal.title}</h3>
                     <small className="goal-focus-story">
-                      +{statCurrency(primaryGoal.thisMonthSaved)} this month. {statCurrency(goalRemaining(primaryGoal))} left to finish.
+                      +{formatAmount(primaryGoal.thisMonthSaved)} {t('this_month')}. {formatAmount(goalRemaining(primaryGoal))} {t('remaining')} {t('target').toLowerCase()}.
                     </small>
                   </div>
                 </div>
                 <div className="goal-badges">
-                  <button className={priorityClass(primaryGoal.priority)} onClick={() => cyclePriority(primaryGoal.id)}>{primaryGoal.priority}</button>
-                  <span className="goal-pocket-label">{goalMomentumLabel(primaryGoal)}</span>
+                  <button className={priorityClass(primaryGoal.priority)} onClick={() => cyclePriority(primaryGoal.id)}>{t(`priority_${primaryGoal.priority.toLowerCase()}` as any)}</button>
+                  <span className="goal-pocket-label">{t(goalMomentumKey(primaryGoal))}</span>
                 </div>
               </div>
 
               <GoalProgressIllustration goal={primaryGoal} />
 
-              <div className="goal-focus-progress-label">Progress</div>
+              <div className="goal-focus-progress-label">{t('progress')}</div>
 
               <div className="goal-focus-stats">
                 <div>
-                  <small>Saved</small>
-                  <p>{statCurrency(primaryGoal.saved)}</p>
+                  <small>{t('saved')}</small>
+                  <p>{formatAmount(primaryGoal.saved)}</p>
                 </div>
                 <div>
-                  <small>Target</small>
-                  <p>{statCurrency(primaryGoal.target)}</p>
+                  <small>{t('target')}</small>
+                  <p>{formatAmount(primaryGoal.target)}</p>
                 </div>
                 <div>
-                  <small>Remaining</small>
-                  <p>{statCurrency(goalRemaining(primaryGoal))}</p>
+                  <small>{t('remaining')}</small>
+                  <p>{formatAmount(goalRemaining(primaryGoal))}</p>
                 </div>
               </div>
 
               <div className="goal-card__footer mt12">
-                <small>Projected finish {goalProjectedDateLabel(primaryGoal)}</small>
+                <small>{t('projected_finish')} {goalProjectedDateLabel(primaryGoal, lang)}</small>
                 <div className="goal-inline-actions">
-                  <button className="goal-mini-action goal-mini-action--filled" onClick={() => addFundsToGoal(primaryGoal.id)}>Add $500</button>
-                  <button className="goal-mini-action" onClick={() => setSelectedGoalId(primaryGoal.id)}>Details</button>
+                  <button className="goal-mini-action goal-mini-action--filled" onClick={() => openTopUpModal(primaryGoal.id, '500')}>{t('add_funds_btn')} 500</button>
+                  <button className="goal-mini-action" onClick={() => setSelectedGoalId(primaryGoal.id)}>{t('details')}</button>
                 </div>
               </div>
             </LiquidCard>
@@ -751,10 +1064,10 @@ export default function App() {
 
           <div className="section-head row between">
             <div>
-              <h3>My Pockets</h3>
-              <small>Tap a pocket to see details</small>
+              <h3>{t('my_pockets')}</h3>
+              <small>{t('tap_pocket')}</small>
             </div>
-            <small>{sortedGoals.length} total</small>
+            <small>{sortedGoals.length} {t('total_label')}</small>
           </div>
 
           <div className="goal-pocket-grid">
@@ -772,16 +1085,16 @@ export default function App() {
                 >
                   <div className="row between">
                     <div className="goal-pocket-icon" style={{ backgroundColor: meta.bg, color: meta.color }}>{meta.icon}</div>
-                    {goal.primary ? <span className="goal-pocket-label">Primary</span> : <span className={priorityClass(goal.priority)}>{goal.priority}</span>}
+                    {goal.primary ? <span className="goal-pocket-label">{t('primary_label')}</span> : <span className={priorityClass(goal.priority)}>{t(`priority_${goal.priority.toLowerCase()}` as any)}</span>}
                   </div>
                   <div className="goal-pocket-copy">
                     <p>{goal.title}</p>
-                    <strong>{statCurrency(goal.saved)}</strong>
+                    <strong>{formatAmount(goal.saved)}</strong>
                   </div>
                   <div className="bar goal-pocket-progress-bar mt8"><span style={{ width: `${goalProgress(goal)}%` }} /></div>
                   <div className="row between mt8">
-                    <small>{goalProgress(goal)}% funded</small>
-                    <small>{goal.saved >= goal.target ? 'Completed' : `+${statCurrency(goal.thisMonthSaved)} month`}</small>
+                    <small>{goalProgress(goal)}{t('funded')}</small>
+                    <small>{goal.saved >= goal.target ? t('completed') : `+${formatAmount(goal.thisMonthSaved)} ${t('this_month')}`}</small>
                   </div>
                 </button>
               );
@@ -789,7 +1102,7 @@ export default function App() {
 
             <button className="goal-pocket-create" onClick={() => setShowGoalModal(true)}>
               <span className="goal-pocket-create__plus"><IcPlus size={18} /></span>
-              <span>Create pocket</span>
+              <span>{t('create_pocket')}</span>
             </button>
           </div>
         </div>
@@ -797,33 +1110,208 @@ export default function App() {
     }
 
     return (
-      <div className="stack">
-        <LiquidCard>
-          <div className="row gap">
-            <div className="avatar"><IcUser size={16} /></div>
-            <div>
-              <h3>Alex Morgan</h3>
-              <small>Liquid Minimal Edition</small>
+      <div className="stack profile-layout">
+        <LiquidCard className="profile-hero-card">
+          <div className="row between">
+            <div className="row gap">
+              <div className="profile-avatar">
+                <span>AM</span>
+              </div>
+              <div>
+                <h3>Alex Morgan</h3>
+                <small>alex@qarjy.ai</small>
+              </div>
+            </div>
+            <button className="profile-chip">Premium</button>
+          </div>
+          <div className="profile-badges mt12">
+            <span className="profile-badge">Kazakhstan</span>
+            <span className="profile-badge">{currency} default</span>
+            <span className="profile-badge">Sync on</span>
+          </div>
+        </LiquidCard>
+
+        <LiquidCard className="profile-metrics-card">
+          <div className="grid three">
+            <div className="profile-metric">
+              <small>{t('transactions')}</small>
+              <p>{transactions.length}</p>
+            </div>
+            <div className="profile-metric">
+              <small>{t('saved')}</small>
+              <p className="ok">{formatAmount(totalIncome - totalSpent)}</p>
+            </div>
+            <div className="profile-metric">
+              <small>{t('goal_progress')}</small>
+              <p>{totalGoalProgress}%</p>
             </div>
           </div>
         </LiquidCard>
+
+        <div className="profile-section-title">{t('account')}</div>
+        <LiquidCard className="profile-group-card">
+          <button className="profile-nav-row">
+            <div className="profile-nav-main">
+              <span className="profile-setting-icon"><IcUser size={15} /></span>
+              <div className="profile-setting-copy">
+                <p>{t('edit_profile')}</p>
+              </div>
+            </div>
+            <IcArrow size={16} className="profile-nav-arrow" />
+          </button>
+          <button className="profile-nav-row">
+            <div className="profile-nav-main">
+              <span className="profile-setting-icon"><IcCard size={15} /></span>
+              <div className="profile-setting-copy">
+                <p>{t('payment_methods')}</p>
+              </div>
+            </div>
+            <IcArrow size={16} className="profile-nav-arrow" />
+          </button>
+          <button className="profile-nav-row">
+            <div className="profile-nav-main">
+              <span className="profile-setting-icon"><IcShield size={15} /></span>
+              <div className="profile-setting-copy">
+                <p>{t('privacy_security')}</p>
+                <small>{faceIdEnabled ? t('face_id_on') : t('face_id_off')}</small>
+              </div>
+            </div>
+            <IcArrow size={16} className="profile-nav-arrow" />
+          </button>
+        </LiquidCard>
+
+        <div className="profile-section-title">{t('preferences')}</div>
+        <LiquidCard className="profile-group-card">
+          <button className="profile-nav-row" onClick={() => setNotificationsEnabled((prev) => !prev)}>
+            <div className="profile-nav-main">
+              <span className="profile-setting-icon"><IcBell size={15} /></span>
+              <div className="profile-setting-copy">
+                <p>{t('notifications')}</p>
+              </div>
+            </div>
+            <span className={`profile-toggle ${notificationsEnabled ? 'is-on' : ''}`} />
+          </button>
+          <button className="profile-nav-row" onClick={() => setDarkModeEnabled((prev) => !prev)}>
+            <div className="profile-nav-main">
+              <span className="profile-setting-icon"><IcMoon size={15} /></span>
+              <div className="profile-setting-copy">
+                <p>{t('dark_mode')}</p>
+              </div>
+            </div>
+            <span className={`profile-toggle ${darkModeEnabled ? 'is-on' : ''}`} />
+          </button>
+          <button className="profile-nav-row" onClick={() => setShowLangModal(true)}>
+            <div className="profile-nav-main">
+              <span className="profile-setting-icon"><IcGlobe size={15} /></span>
+              <div className="profile-setting-copy">
+                <p>{t('language')}</p>
+                <small className="profile-nav-subtitle">
+                  {lang === 'en' ? 'English' : lang === 'ru' ? 'Русский' : 'Қазақша'}
+                </small>
+              </div>
+            </div>
+            <IcArrow size={16} className="profile-nav-arrow" />
+          </button>
+          <button className="profile-nav-row" onClick={() => setShowCurrencyModal(true)}>
+            <div className="profile-nav-main">
+              <span className="profile-setting-icon"><IcWallet size={15} /></span>
+              <div className="profile-setting-copy">
+                <p>{t('currency')}</p>
+                <small className="profile-nav-subtitle">
+                  {currency === 'KZT' ? 'KZT (₸)' : currency === 'USD' ? 'USD ($)' : 'RUB (₽)'}
+                </small>
+              </div>
+            </div>
+            <IcArrow size={16} className="profile-nav-arrow" />
+          </button>
+          <button className="profile-nav-row" onClick={() => setWeeklyDigestEnabled((prev) => !prev)}>
+            <div className="profile-nav-main">
+              <span className="profile-setting-icon"><IcFolder size={15} /></span>
+              <div className="profile-setting-copy">
+                <p>{t('manage_categories')}</p>
+                <small>{weeklyDigestEnabled ? t('digest_on') : t('digest_off')}</small>
+              </div>
+            </div>
+            <span className={`profile-toggle ${weeklyDigestEnabled ? 'is-on' : ''}`} />
+          </button>
+        </LiquidCard>
+
+        <div className="profile-section-title">{t('data_section')}</div>
+        <LiquidCard className="profile-group-card">
+          <button className="profile-nav-row">
+            <div className="profile-nav-main">
+              <span className="profile-setting-icon"><IcUpload size={15} /></span>
+              <div className="profile-setting-copy">
+                <p>{t('export_data')}</p>
+              </div>
+            </div>
+            <IcArrow size={16} className="profile-nav-arrow" />
+          </button>
+          <button className="profile-nav-row">
+            <div className="profile-nav-main">
+              <span className="profile-setting-icon"><IcDoc size={15} /></span>
+              <div className="profile-setting-copy">
+                <p>{t('generate_report')}</p>
+              </div>
+            </div>
+            <IcArrow size={16} className="profile-nav-arrow" />
+          </button>
+          <button className="profile-nav-row">
+            <div className="profile-nav-main">
+              <span className="profile-setting-icon"><IcShield size={15} /></span>
+              <div className="profile-setting-copy">
+                <p>{t('backup_restore')}</p>
+              </div>
+            </div>
+            <IcArrow size={16} className="profile-nav-arrow" />
+          </button>
+        </LiquidCard>
+
+        <div className="profile-section-title">{t('support')}</div>
+        <LiquidCard className="profile-group-card">
+          <button className="profile-nav-row">
+            <div className="profile-nav-main">
+              <span className="profile-setting-icon"><IcHelp size={15} /></span>
+              <div className="profile-setting-copy">
+                <p>{t('help_center')}</p>
+              </div>
+            </div>
+            <IcArrow size={16} className="profile-nav-arrow" />
+          </button>
+          <button className="profile-nav-row">
+            <div className="profile-nav-main">
+              <span className="profile-setting-icon"><IcCog size={15} /></span>
+              <div className="profile-setting-copy">
+                <p>{t('app_settings')}</p>
+              </div>
+            </div>
+            <IcArrow size={16} className="profile-nav-arrow" />
+          </button>
+        </LiquidCard>
+
+        <button className="profile-logout-btn">
+          <IcLogout size={18} />
+          <span>{t('logout')}</span>
+        </button>
+
+        <p className="profile-version">Version 1.0.0</p>
       </div>
     );
   };
 
   const currentCategoryList = entryType === 'income' ? incomeCategories : expenseCategories;
   const headerTitle =
-    tab === 'home' ? 'Budget Tracker' :
-    tab === 'budget' ? 'Budget' :
-    tab === 'insights' ? 'Insights' :
-    tab === 'goals' ? 'Goals' :
-    'Profile';
+    tab === 'home' ? t('header_home') :
+    tab === 'budget' ? t('header_budget') :
+    tab === 'insights' ? t('header_insights') :
+    tab === 'goals' ? t('header_goals') :
+    t('header_profile');
   const headerSubtitle =
-    tab === 'home' ? 'Qalta-inspired manual flow' :
-    tab === 'budget' ? 'Track and review monthly spending' :
-    tab === 'insights' ? 'Signals and financial nudges' :
-    tab === 'goals' ? 'Plan, prioritize, and fund your next milestones' :
-    'Manage your account and settings';
+    tab === 'home' ? t('header_home_sub') :
+    tab === 'budget' ? t('header_budget_sub') :
+    tab === 'insights' ? t('header_insights_sub') :
+    tab === 'goals' ? t('header_goals_sub') :
+    t('header_profile_sub');
 
   return (
     <div className="phone-shell">
@@ -834,14 +1322,14 @@ export default function App() {
             <small>{headerSubtitle}</small>
           </div>
           {tab === 'home' && (
-            <div className="currency-chip">
+            <button className="currency-chip" onClick={() => setShowCurrencyModal(true)}>
               <IcWallet size={14} />
-              <span>KZT</span>
-            </div>
+              <span>{currency}</span>
+            </button>
           )}
           {tab === 'goals' && (
             <div className="currency-chip">
-              <span>{activeGoalsCount} active</span>
+              <span>{activeGoalsCount} {t('active_pockets')}</span>
             </div>
           )}
         </div>
@@ -851,11 +1339,11 @@ export default function App() {
       <div className="tab-wrap">
         <nav className="tabbar">
           {[
-            { id: 'home', icon: <IcHome size={21} />, label: 'Home' },
-            { id: 'budget', icon: <IcBudget size={21} />, label: 'Budget' },
-            { id: 'insights', icon: <IcBrain size={21} />, label: 'Insights' },
-            { id: 'goals', icon: <IcGoal size={21} />, label: 'Goals' },
-            { id: 'profile', icon: <IcUser size={21} />, label: 'Profile' },
+            { id: 'home', icon: <IcHome size={21} />, label: t('nav_home') },
+            { id: 'budget', icon: <IcBudget size={21} />, label: t('nav_budget') },
+            { id: 'insights', icon: <IcBrain size={21} />, label: t('nav_insights') },
+            { id: 'goals', icon: <IcGoal size={21} />, label: t('nav_goals') },
+            { id: 'profile', icon: <IcUser size={21} />, label: t('nav_profile') },
           ].map((item) => (
             <button key={item.id} onClick={() => setTab(item.id as Tab)} className={`tab ${tab === item.id ? 'active' : ''}`}>
               {item.icon}
@@ -877,32 +1365,32 @@ export default function App() {
               <div className="handle" />
               <div className="row between">
                 <div>
-                  <h3>New Goal</h3>
-                  <small>Create and prioritize a financial target</small>
+                  <h3>{t('new_goal')}</h3>
+                  <small>{t('header_goals_sub')}</small>
                 </div>
                 <button className="ghost icon-btn" onClick={() => setShowGoalModal(false)}><IcClose size={17} /></button>
               </div>
               <div className="stack sm mt12">
-                <input value={goalTitle} onChange={(e) => setGoalTitle(e.target.value)} placeholder="Goal name" />
+                <input value={goalTitle} onChange={(e) => setGoalTitle(e.target.value)} placeholder={t('goal_name')} />
                 <div className="grid two">
-                  <input value={goalTarget} onChange={(e) => setGoalTarget(e.target.value)} placeholder="Target amount" />
-                  <input value={goalSaved} onChange={(e) => setGoalSaved(e.target.value)} placeholder="Already saved" />
+                  <input value={goalTarget} onChange={(e) => setGoalTarget(e.target.value)} placeholder={t('goal_target')} />
+                  <input value={goalSaved} onChange={(e) => setGoalSaved(e.target.value)} placeholder={t('goal_already_saved')} />
                 </div>
                 <input type="date" value={goalDeadline} onChange={(e) => setGoalDeadline(e.target.value)} />
                 <div className="grid two">
                   <select value={goalCategory} onChange={(e) => setGoalCategory(e.target.value as GoalCategory)}>
                     {(['Home', 'Car', 'Travel', 'Debt', 'Emergency', 'Other'] as GoalCategory[]).map((item) => (
-                      <option key={item} value={item}>{item}</option>
+                      <option key={item} value={item}>{t(`goal_cat_${item.toLowerCase()}` as any)}</option>
                     ))}
                   </select>
                   <select value={goalPriority} onChange={(e) => setGoalPriority(e.target.value as GoalPriority)}>
                     {(['High', 'Medium', 'Low'] as GoalPriority[]).map((item) => (
-                      <option key={item} value={item}>{item}</option>
+                      <option key={item} value={item}>{t(`priority_${item.toLowerCase()}` as any)}</option>
                     ))}
                   </select>
                 </div>
-                <input value={goalMonthly} onChange={(e) => setGoalMonthly(e.target.value)} placeholder="Monthly contribution (optional)" />
-                <button className="save-btn" onClick={createGoal}>Create Goal</button>
+                <input value={goalMonthly} onChange={(e) => setGoalMonthly(e.target.value)} placeholder={t('goal_monthly')} />
+                <button className="save-btn" onClick={createGoal}>{t('create_goal')}</button>
               </div>
             </motion.div>
           </>
@@ -917,8 +1405,8 @@ export default function App() {
               <div className="handle" />
               <div className="row between">
                 <div>
-                  <h3>Pocket Details</h3>
-                  <small>{selectedGoal.category} • {goalMomentumLabel(selectedGoal)}</small>
+                  <h3>{t('pocket_details')}</h3>
+                  <small>{t(`goal_cat_${selectedGoal.category.toLowerCase()}` as any)} • {t(goalMomentumKey(selectedGoal))}</small>
                 </div>
                 <button className="ghost icon-btn" onClick={() => setSelectedGoalId(null)}><IcClose size={17} /></button>
               </div>
@@ -934,10 +1422,10 @@ export default function App() {
                   {goalCategoryMeta(selectedGoal.category).icon}
                 </div>
                 <p className="goal-detail-title">{selectedGoal.title}</p>
-                <small>{selectedGoal.category} pocket</small>
-                <div className="goal-detail-amount">{statCurrency(selectedGoal.saved)}</div>
+                <small>{t(`goal_cat_${selectedGoal.category.toLowerCase()}` as any)} {t('my_pockets').toLowerCase().replace('my ', '').replace('менің ', '').replace('мои ', '')}</small>
+                <div className="goal-detail-amount">{formatAmount(selectedGoal.saved)}</div>
                 <div className="row between mt8">
-                  <small>Goal {statCurrency(selectedGoal.target)}</small>
+                  <small>{t('target')} {formatAmount(selectedGoal.target)}</small>
                   <small>{goalProgress(selectedGoal)}%</small>
                 </div>
                 <div
@@ -951,41 +1439,41 @@ export default function App() {
               </div>
 
               <div className="goal-detail-actions mt16">
-                <button className="goal-detail-action" onClick={() => addFundsToGoal(selectedGoal.id)}>
+                <button className="goal-detail-action" onClick={() => openTopUpModal(selectedGoal.id)}>
                   <span className="goal-detail-action__icon"><IcPlus size={16} /></span>
-                  <span>Add money</span>
+                  <span>{t('add_money')}</span>
                 </button>
                 <button className="goal-detail-action" onClick={() => setPrimaryGoal(selectedGoal.id)}>
                   <span className="goal-detail-action__icon"><IcGoal size={16} /></span>
-                  <span>Make primary</span>
+                  <span>{t('make_primary')}</span>
                 </button>
                 <button className="goal-detail-action" onClick={() => cyclePriority(selectedGoal.id)}>
                   <span className="goal-detail-action__icon"><IcArrow size={16} /></span>
-                  <span>Priority</span>
+                  <span>{t('goal_priority')}</span>
                 </button>
               </div>
 
               <div className="goal-detail-list mt16">
                 <div className="goal-detail-item">
                   <div>
-                    <p>Monthly transfer</p>
-                    <small>Added this month</small>
+                    <p>{t('monthly_transfer')}</p>
+                    <small>{t('added_this_month')}</small>
                   </div>
-                  <strong className="ok">+{statCurrency(selectedGoal.thisMonthSaved)}</strong>
+                  <strong className="ok">+{formatAmount(selectedGoal.thisMonthSaved)}</strong>
                 </div>
                 <div className="goal-detail-item">
                   <div>
-                    <p>Next milestone</p>
-                    <small>{goalNextMilestone(selectedGoal) ? `${goalNextMilestone(selectedGoal)!.percent}% funded` : 'Completed'}</small>
+                    <p>{t('next_milestone')}</p>
+                    <small>{goalNextMilestone(selectedGoal) ? `${goalNextMilestone(selectedGoal)!.percent}${t('funded')}` : t('completed')}</small>
                   </div>
-                  <strong>{goalNextMilestone(selectedGoal) ? statCurrency(goalNextMilestone(selectedGoal)!.remaining) : statCurrency(0)}</strong>
+                  <strong>{goalNextMilestone(selectedGoal) ? formatAmount(goalNextMilestone(selectedGoal)!.remaining) : formatAmount(0)}</strong>
                 </div>
                 <div className="goal-detail-item">
                   <div>
-                    <p>Projected finish</p>
-                    <small>At current pace</small>
+                    <p>{t('projected_finish')}</p>
+                    <small>{t('at_current_pace')}</small>
                   </div>
-                  <strong>{goalProjectedDateLabel(selectedGoal)}</strong>
+                  <strong>{goalProjectedDateLabel(selectedGoal, lang)}</strong>
                 </div>
               </div>
             </motion.div>
@@ -1001,8 +1489,8 @@ export default function App() {
               <div className="handle" />
               <div className="row between">
                 <div>
-                  <h3>Add Transaction</h3>
-                  <small>Use AI or fill manually</small>
+                  <h3>{t('add_transaction')}</h3>
+                  <small>{t('use_ai_or_fill')}</small>
                 </div>
                 <button className="ghost icon-btn" onClick={() => setShowAddModal(false)}><IcClose size={17} /></button>
               </div>
@@ -1013,12 +1501,12 @@ export default function App() {
                     <span className="method-main">
                       <span className="method-ico"><IcScan size={17} /></span>
                       <span className="method-copy">
-                        <b>Scan QR / Check</b>
-                        <small>Auto detect amount and category</small>
+                        <b>{t('scan_qr')}</b>
+                        <small>{t('auto_detect')}</small>
                       </span>
                     </span>
                     <span className="method-meta">
-                      <span className="method-badge">Instant</span>
+                      <span className="method-badge">{t('instant')}</span>
                       <span className="method-tail"><IcArrow size={15} /></span>
                     </span>
                   </button>
@@ -1026,12 +1514,12 @@ export default function App() {
                     <span className="method-main">
                       <span className="method-ico"><IcUpload size={17} /></span>
                       <span className="method-copy">
-                        <b>Upload screenshot</b>
-                        <small>Extract expense from image</small>
+                        <b>{t('upload_screenshot')}</b>
+                        <small>{t('extract_from_image')}</small>
                       </span>
                     </span>
                     <span className="method-meta">
-                      <span className="method-badge">Photo</span>
+                      <span className="method-badge">{t('photo')}</span>
                       <span className="method-tail"><IcArrow size={15} /></span>
                     </span>
                   </button>
@@ -1039,12 +1527,12 @@ export default function App() {
                     <span className="method-main">
                       <span className="method-ico"><IcMic size={17} /></span>
                       <span className="method-copy">
-                        <b>Voice input</b>
-                        <small>Convert speech to transaction</small>
+                        <b>{t('voice_input')}</b>
+                        <small>{t('convert_speech')}</small>
                       </span>
                     </span>
                     <span className="method-meta">
-                      <span className="method-badge">Speak</span>
+                      <span className="method-badge">{t('speak')}</span>
                       <span className="method-tail"><IcArrow size={15} /></span>
                     </span>
                   </button>
@@ -1052,12 +1540,12 @@ export default function App() {
                     <span className="method-main">
                       <span className="method-ico"><IcKeyboard size={17} /></span>
                       <span className="method-copy">
-                        <b>Enter manually</b>
-                        <small>Type amount and category yourself</small>
+                        <b>{t('enter_manually')}</b>
+                        <small>{t('type_manually')}</small>
                       </span>
                     </span>
                     <span className="method-meta">
-                      <span className="method-badge">Manual</span>
+                      <span className="method-badge">{t('manual')}</span>
                       <span className="method-tail"><IcArrow size={15} /></span>
                     </span>
                   </button>
@@ -1066,22 +1554,22 @@ export default function App() {
                 <div className="stack sm mt12">
                   <div className="income-expense-toggle">
                     <button type="button" className={entryType === 'income' ? 'ie-btn active income' : 'ie-btn income'} onClick={() => { setEntryType('income'); setCategory('Income'); }}>
-                      ↙ Доход
+                      ↙ {t('add_income')}
                     </button>
                     <button type="button" className={entryType === 'expense' ? 'ie-btn active expense' : 'ie-btn expense'} onClick={() => { setEntryType('expense'); setCategory('Food'); }}>
-                      ↗ Расход
+                      ↗ {t('add_expense')}
                     </button>
                   </div>
 
-                  <div className="amount-view">{amount || '0'} KZT</div>
+                  <div className="amount-view">{amount || '0'} {currency}</div>
 
                   <div className="quick-row">
-                    <div className="quick-pill"><IcWallet size={13} /> Wallet</div>
-                    <div className="quick-pill"><IcCalendar size={13} /> Today</div>
-                    <div className="quick-pill">KZT</div>
+                    <div className="quick-pill"><IcWallet size={13} /> {t('wallet')}</div>
+                    <div className="quick-pill"><IcCalendar size={13} /> {t('today')}</div>
+                    <div className="quick-pill">{currency}</div>
                   </div>
 
-                  <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Note" />
+                  <input value={name} onChange={(e) => setName(e.target.value)} placeholder={t('description')} />
 
                   <div className="category-strip">
                     {currentCategoryList.map((c, i) => {
@@ -1095,18 +1583,152 @@ export default function App() {
                           style={{ backgroundColor: c.bg, color: c.color }}
                         >
                           <span className="cat-ico">{c.icon}</span>
-                          <span>{c.label}</span>
+                          <span>{t(`cat_${c.id.toLowerCase()}` as any)}</span>
                         </button>
                       );
                     })}
                   </div>
 
-                  <button className="save-btn" onClick={addTransaction}>Сохранить</button>
-                  <button className="ghost wide" onClick={() => setAiStep('methods')}>Back to AI options</button>
+                  <button className="save-btn" onClick={addTransaction}>{t('save_btn')}</button>
+                  <button className="ghost wide" onClick={() => setAiStep('methods')}>{t('back_to_ai')}</button>
                 </div>
               )}
             </motion.div>
           </>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {showLangModal && (
+          <div className="modal-overlay" onClick={() => setShowLangModal(false)}>
+            <motion.div className="modal-sheet" initial={{ y: 200, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: 200, opacity: 0 }} onClick={(e) => e.stopPropagation()}>
+              <div className="modal-handle" />
+              <h3>{t('select_language')}</h3>
+              <div className="lang-list">
+                {([
+                  { code: 'en' as Lang, flag: '🇺🇸', native: 'English', english: 'English' },
+                  { code: 'ru' as Lang, flag: '🇷🇺', native: 'Русский', english: 'Russian' },
+                  { code: 'kk' as Lang, flag: '🇰🇿', native: 'Қазақша', english: 'Kazakh' },
+                ] as const).map((item) => (
+                  <button
+                    key={item.code}
+                    className={`lang-item ${lang === item.code ? 'lang-item--active' : ''}`}
+                    onClick={() => {
+                      setLang(item.code);
+                      setShowLangModal(false);
+                    }}
+                  >
+                    <span className="lang-flag">{item.flag}</span>
+                    <div className="lang-copy">
+                      <p>{item.native}</p>
+                      <small>{item.english}</small>
+                    </div>
+                    {lang === item.code && <span className="lang-check">✓</span>}
+                  </button>
+                ))}
+              </div>
+              <button className="modal-cancel" onClick={() => setShowLangModal(false)}>{t('cancel')}</button>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {showCurrencyModal && (
+          <div className="modal-overlay" onClick={() => setShowCurrencyModal(false)}>
+            <motion.div className="modal-sheet" initial={{ y: 200, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: 200, opacity: 0 }} onClick={(e) => e.stopPropagation()}>
+              <div className="modal-handle" />
+              <h3>{t('select_currency')}</h3>
+              <div className="lang-list">
+                {([
+                  { code: 'KZT' as Currency, symbol: '₸', name: 'Kazakhstani Tenge', label: 'KZT' },
+                  { code: 'USD' as Currency, symbol: '$', name: 'US Dollar', label: 'USD' },
+                  { code: 'RUB' as Currency, symbol: '₽', name: 'Russian Ruble', label: 'RUB' },
+                ] as const).map((item) => (
+                  <button
+                    key={item.code}
+                    className={`lang-item ${currency === item.code ? 'lang-item--active' : ''}`}
+                    onClick={() => {
+                      setCurrency(item.code);
+                      setShowCurrencyModal(false);
+                    }}
+                  >
+                    <span className="lang-flag" style={{ fontSize: '22px' }}>{item.symbol}</span>
+                    <div className="lang-copy">
+                      <p>{item.label}</p>
+                      <small>{item.name}</small>
+                    </div>
+                    {currency === item.code && <span className="lang-check">✓</span>}
+                  </button>
+                ))}
+              </div>
+              <button className="modal-cancel" onClick={() => setShowCurrencyModal(false)}>{t('cancel')}</button>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {showTopUpModal && (
+          <div className="modal-overlay" onClick={closeTopUpModal}>
+            <motion.div className="modal-sheet" initial={{ y: 200, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: 200, opacity: 0 }} onClick={(e) => e.stopPropagation()}>
+              <div className="modal-handle" />
+              <div className="modal-header">
+                <div className="grow">
+                  <h3>{t('top_up')}</h3>
+                  <p className="modal-subtitle">{t('top_up_subtitle')}</p>
+                </div>
+                <button className="modal-close" onClick={closeTopUpModal}><IcClose size={18} /></button>
+              </div>
+
+              {/* Amount Field */}
+              <div className="amount-field">
+                <span className="amount-symbol">
+                  {currency === 'KZT' ? '₸' : currency === 'USD' ? '$' : '₽'}
+                </span>
+                <input
+                  type="number"
+                  placeholder="0"
+                  value={topUpAmount}
+                  onChange={(e) => setTopUpAmount(e.target.value)}
+                  className="amount-input"
+                  autoFocus
+                />
+              </div>
+
+              {/* Quick Amounts */}
+              <p className="quick-label">{t('quick_amounts')}</p>
+              <div className="quick-chips">
+                {[1000, 5000, 10000, 50000].map((v) => (
+                  <button key={v} className="quick-chip" onClick={() => setTopUpAmount(String(v))}>
+                    {v.toLocaleString()}
+                  </button>
+                ))}
+              </div>
+
+              {/* Select Goal */}
+              <p className="quick-label">{t('select_goal')}</p>
+              <div className="goal-select-list">
+                <button
+                  className={`goal-select-item ${topUpGoalId === null ? 'goal-select-item--active' : ''}`}
+                  onClick={() => setTopUpGoalId(null)}
+                >
+                  — {t('no_goal')}
+                </button>
+                {goals.map((goal) => (
+                  <button
+                    key={goal.id}
+                    className={`goal-select-item ${topUpGoalId === goal.id ? 'goal-select-item--active' : ''}`}
+                    onClick={() => setTopUpGoalId(goal.id)}
+                  >
+                    {goalCategoryMeta(goal.category).icon} {goal.title}
+                  </button>
+                ))}
+              </div>
+
+              <button className="primary-btn" onClick={confirmTopUp}>{t('confirm_top_up')}</button>
+            </motion.div>
+          </div>
         )}
       </AnimatePresence>
     </div>
